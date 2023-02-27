@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    height: 288px;
+    width: 288px;
+}
+
+#destinations{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+}
+
+.destinations__article{
+    max-width: 288px;
+}
