@@ -9,6 +9,12 @@ img{
     height: 288px;
     width: 288px;
     object-fit: cover;
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 #destination-list{
@@ -18,18 +24,16 @@ img{
     margin: auto;
     gap: 16px;
     list-style: none;
+    margin-bottom: 25px;
 }
 
 h1{
     width: 1200px;
     margin: auto;
+    font-size: 48px;
+    margin-bottom: 25px;
 }
 
 li{
     width: 288px;
-}
-
-.destinations__article{
-    height: 366px;
-    background-color: #CEF9FF;
 }
