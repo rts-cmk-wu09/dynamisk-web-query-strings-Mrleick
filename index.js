@@ -10,7 +10,7 @@ fetch('data/destinations.json').then((response) => {
       listItem.classList.add('destination');
       listItem.dataset.id = destination.id;
       listItem.innerHTML = `
-      <a href="destination.html">
+      <a href="destination.html?id=${destination.id}">
         <img src="${destination.image}" alt="${destination.name}">
         <h2>${destination.destination}</h2>
         <p>${destination.title}</p></a>
