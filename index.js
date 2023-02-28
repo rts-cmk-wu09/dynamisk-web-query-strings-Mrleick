@@ -1,20 +1,20 @@
-const destinations = document.getElementById('destinations');
+const destinationList = document.getElementById('destination-list');
 
-fetch("data/destinations.json")
+// Hent alle destinationer fra destinations.json
+fetch('data/destinations.json')
   .then(response => response.json())
-  .then(data => {
-    const h1 = document.createElement('h1');
-    h1.textContent = 'Apartments for rent'; // Change the text content to your desired heading
-    destinations.appendChild(h1);
+  .then(destinations => {
 
-    for (let i = 0; i < 8; i++) {
-      const article = document.createElement('article');
-      article.classList.add('destinations__article');
-
-      const img = document.createElement('img');
-      img.src = data.destinations[i].image;
-      article.appendChild(img);
-
-      destinations.appendChild(article);
-    }
+    // Opret et <li> element for hver destination
+    destinationsArray.forEach(destination => {
+      const listItem = document.createElement('li');
+      listItem.classList.add('destination');
+      listItem.dataset.id = destination.id;
+      listItem.innerHTML = `
+        <img src="img/${destination.image}" alt="${destination.name}">
+        <h2>${destination.name}</h2>
+        <p>${destination.description}</p>
+      `;
+      destinationList.appendChild(listItem);
+    });
   });
