@@ -6,14 +6,18 @@
 img{
     height: 288px;
     width: 288px;
+    object-fit: cover;
 }
 
 #destinations{
     display: flex;
     flex-wrap: wrap;
     width: 1200px;
+    margin: auto;
+    gap: 16px;
 }
 
 .destinations__article{
-    max-width: 288px;
+    height: 366px;
+    background-color: #CEF9FF;
 }
