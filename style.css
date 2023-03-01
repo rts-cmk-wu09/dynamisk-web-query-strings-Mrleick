@@ -5,6 +5,7 @@
     font-family: 'Inter', sans-serif;
 }
 
+/* Min Index.html */
 img{
     height: 288px;
     width: 288px;
@@ -36,4 +37,20 @@ h1{
 
 li{
     width: 288px;
+}
+
+/* Mit Destination.html */
+
+#detailview{
+    display: flex;
+}
+
+.imagecontainer{
+    width: 712px;
+    height: 832px;
+    background: grey;
+}
+
+.txtcontainer{
+    width: 483px;
 }
