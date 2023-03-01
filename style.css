@@ -53,4 +53,12 @@ li{
 
 .txtcontainer{
     width: 483px;
+    margin-left: 82px;
+}
+
+.txtcontainer__town{
+    text-align: center;
+}
+.txtcontainer__title{
+    font-size: 40px;
 }
