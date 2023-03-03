@@ -6,23 +6,46 @@
     font-family: 'Inter', sans-serif;
 }
 
+.wrapper{
+    max-width: 1200px;
+    margin: auto;
+}
 /* Min Index.html */
-img {
+.destination__img {
     height: 288px;
     width: 288px;
     object-fit: cover;
     border-radius: 10px;
+    grid-row: 1/2;
+    grid-column: 1/2;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: black;display: grid;
+    grid-template-rows: auto;
 }
 
+i {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    position: absolute;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;;
+    font-size: 20px;
+    justify-self: end;
+    margin:10px;
+}
+
+.fa-solid{
+    color: red;
+    -webkit-text-stroke-width: 3px;
+}
 #destination-list {
     display: flex;
     flex-wrap: wrap;
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
     gap: 16px;
     list-style: none;
@@ -38,6 +61,7 @@ h1 {
 
 li {
     width: 288px;
+    
 }
 
 /* Mit Destination.html */
