@@ -6,10 +6,7 @@
     font-family: 'Inter', sans-serif;
 }
 
-.wrapper{
-    max-width: 1200px;
-    margin: auto;
-}
+
 /* Min Index.html */
 .destination__img {
     height: 288px;
@@ -36,6 +33,7 @@ i {
     font-size: 20px;
     justify-self: end;
     margin:10px;
+    cursor: pointer;
 }
 
 .fa-solid{
