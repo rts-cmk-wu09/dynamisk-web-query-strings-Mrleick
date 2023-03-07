@@ -6,7 +6,6 @@
     font-family: 'Inter', sans-serif;
 }
 
-
 /* Min Index.html */
 .destination__img {
     height: 288px;
@@ -40,6 +39,7 @@ i {
     color: red;
     -webkit-text-stroke-width: 3px;
 }
+
 #destination-list {
     display: flex;
     flex-wrap: wrap;
